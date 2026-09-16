@@ -1,0 +1,117 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body{
+
+    height: 10vh;
+    background: purple;
+    padding: 30px;
+}
+
+.container{
+
+    height: 100%;
+    background: black;
+    color: aliceblue;
+    border-radius: 4%;
+    
+    header{
+        padding: 40px;
+        display: flex;
+        justify-content: space-between;
+        background: rgb(48, 4, 41);
+        border-radius: 8px;
+    
+        .logo{
+            font-size: 26px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            color: aliceblue;
+            text-decoration: none;
+        }
+    
+        .logo:hover{
+            transform: scale(1.5);
+            color: red;
+        }
+    }
+
+    section{
+        
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 100px;
+        padding: 100px 5% 0;
+        background-color: black;
+            
+            
+        .inicio-detalle h1{
+            font-size: 44px;
+            background: rgb(255, 255, 255);
+            background-clip: text;
+            color: transparent;
+        }
+        
+        .inicio-detalle h2{
+            font-size: 18px;
+            color: rgb(255, 255, 255);
+            margin-bottom: 15px;
+        }
+        
+        .inicio-detalle p{
+            
+            margin: 20px 0;
+            line-height: 1.6;
+            font-size: 1rem;
+            color: rgba(255, 255, 255, 1);
+        }
+        
+        .btn{
+            display: inline-block;
+            padding: 12px 28px;
+            background: purple;
+            border: 3px solid;
+            border-radius: 40px;
+            color: beige;
+            text-decoration: none;
+            font-weight: 600;
+            
+        }
+        .btn:hover{
+            background: transparent;
+            transform: translateY(-5px);
+            color: purple
+        }
+        
+        .perfil img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+            border-radius: 50%;
+            border: 7px solid;
+            color: purple
+        }
+        .perfil img:hover{
+            transform: scale(1.1);
+        }
+
+        .social-icons{
+            font-size: 100px;
+            color: purple;
+            text-decoration: none;
+            
+            a{
+                margin-bottom: 0;
+            }
+        }
+        .social-icons a:hover{
+            color: rgb(236, 220, 236);
+        }
+    }
+
+}

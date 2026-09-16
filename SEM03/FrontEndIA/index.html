@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>De la Cruz Saavedra Leandro Kaled — Archivo</title>
+<meta name="description" content="Portafolio de De la Cruz Saavedra Leandro Kaled — Desarrollador Web. Proyectos, stack y contacto.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a href="#" class="brand" aria-label="Inicio">DE LA CRUZ SAAVEDRA<span class="brand-dot"> LEANDRO KALED </span> <span class="brand-year">2026</span></a>
+    <nav class="main-nav" aria-label="Principal">
+      <a href="#proyectos" class="nav-link">01 Proyectos</a>
+      <a href="#stack" class="nav-link">02 Stack</a>
+      <a href="#contacto" class="nav-link">03 Contacto</a>
+    </nav>
+    <button class="menu-btn" id="menu-btn" aria-expanded="false" aria-controls="mobile-nav">Menú</button>
+  </div>
+  <nav class="mobile-nav" id="mobile-nav" hidden>
+    <a href="#proyectos">01 Proyectos</a>
+    <a href="#stack">02 Stack</a>
+    <a href="#contacto">03 Contacto</a>
+  </nav>
+</header>
+
+<main class="wrap">
+  <section class="sheet hero" aria-labelledby="hero-title">
+    <div class="sheet-head">
+      <span class="mono status"><i class="dot"></i> Disponible</span>
+    </div>
+
+    <div class="hero-grid">
+    
+      <div class="hero-main">
+
+        <div class="foto-block">
+          <div class="foto-frame">
+            <img id="foto-perfil" src="https://sivireno.undc.edu.pe/Imagen/2511080107.jpg" alt="Foto de De la Cruz Saavedra Leandro Kaled" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+          </div>
+          <div class="foto-caption mono">
+            <strong>De la Cruz Saavedra Leandro Kaled</strong><br>
+            Desarrollador Web — UNDC<br>
+          </div>
+        </div>
+
+        <h1 id="hero-title" class="hero-title">Desarrollador web<br>enfocado en interfaces<br>útiles y rápidas.</h1>
+        <p class="hero-text">Soy Leandro, estudiante de Desarrollo Web Full Stack. Trabajo con HTML, CSS y JavaScript vanilla — sin frameworks. Me interesa que los sitios carguen rápido, se entiendan a la primera y funcionen sin depender de librerías externas.</p>
+
+        <div class="hero-actions">
+          <a href="#proyectos" class="btn btn-primary">Ver proyectos</a>
+          <a href="#contacto" class="btn btn-ghost">Escribir mensaje →</a>
+        </div>
+
+        <dl class="meta-list mono">
+          <div><dt>Correo</dt><dd>lk291006@gmail.com</dd></div>
+          <div><dt>Ubicación</dt><dd>Lima, Perú — Remoto</dd></div>
+          <div><dt>Respuesta</dt><dd>&lt; 24h</dd></div>
+        </dl>
+
+      </div>
+
+      <aside class="hero-side" aria-label="Datos rápidos">
+        
+        <div class="side-box">
+        
+          <p class="mono side-kicker">Enfoque actual</p>
+          <p class="side-title">Maquetación + lógica vanilla</p>
+          <p class="side-desc">HTML semántico, CSS Grid/Flexbox y JS sin dependencias. Performance y accesibilidad primero.</p>
+        
+          <div class="mini-links mono">
+            <a href="https://github.com/2511080107" target="_blank" rel="noreferrer">GitHub</a>
+            <a href="https://www.linkedin.com/in/leandro-de-la-cruz-b32373425/" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a href="https://www.instagram.com/leandr.zzz/" target="_blank" rel="noreferrer">Instagram</a>
+          </div>
+        
+        </div>
+
+        <div class="side-box side-box-accent">
+          <p class="mono side-kicker">Última actualización</p>
+          <p class="mono side-value" id="last-update">—</p>
+          <p class="mono side-kicker" style="margin-top:12px">Mensajes guardados (local)</p>
+          <p class="mono side-value" id="msg-count">0</p>
+        </div>
+      
+      </aside>
+    
+    </div>
+ 
+  </section>
+
+  <!-- PROYECTOS con preview de imagen -->
+  <section id="proyectos" class="section">
+    <div class="section-head">
+      <h2 class="section-title"><span class="mono num">01</span> Proyectos</h2>
+    </div>
+
+    <div class="toolbar">
+      <div class="search-wrap">
+        <label for="q" class="mono sr-only">Buscar</label>
+        <input id="q" type="search" placeholder="Buscar por nombre o tecnología…" autocomplete="off">
+      </div>
+      <div class="filters" role="group" aria-label="Filtrar por tipo">
+        <button class="filter-btn is-active" data-filter="all">Todo</button>
+        <button class="filter-btn" data-filter="interfaz">Interfaz</button>
+        <button class="filter-btn" data-filter="logica">Lógica</button>
+        <button class="filter-btn" data-filter="producto">Producto</button>
+      </div>
+    </div>
+
+    <div class="project-grid" id="project-list" role="list"></div>
+    <p class="mono empty-msg" id="empty-msg" hidden>No hay resultados para esa búsqueda.</p>
+  </section>
+
+  <!-- STACK -->
+  <section id="stack" class="section">
+    <div class="section-head">
+      <h2 class="section-title"><span class="mono num">02</span> Sobre mí / Stack</h2>
+    </div>
+    <div class="stack-grid">
+      <div class="stack-col">
+        <h3 class="stack-heading">Sobre mí</h3>
+        <p style="font-size:14px; line-height:1.6; margin:0 0 12px">Soy De la Cruz Saavedra Leandro Kaled, estudiante de Desarrollo Web. Me gusta construir interfaces limpias y funcionales, priorizando el código entendible y el diseño sin excesos. Este archivo reúne mis prácticas de HTML5 y CSS3 guiadas por <code>FrontEnd/CSS3.html</code>.</p>
+        <ul class="stack-list">
+          <li><strong>HTML5</strong><span>Semántica, formularios, a11y</span></li>
+          <li><strong>CSS3</strong><span>Grid, Flexbox, variables</span></li>
+          <li><strong>JavaScript</strong><span>ES2022, DOM, Fetch</span></li>
+        </ul>
+      </div>
+      <div class="stack-col">
+        <h3 class="stack-heading">Flujo</h3>
+        <ul class="stack-list">
+          <li><strong>Git / GitHub</strong><span>2511080107</span></li>
+          <li><strong>Figma</strong><span>Wireframes</span></li>
+          <li><strong>DevTools</strong><span>Performance</span></li>
+        </ul>
+        <p class="mono note">Principio: si se puede resolver con HTML/CSS, no añado JS.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto" class="section">
+    <div class="section-head">
+      <h2 class="section-title"><span class="mono num">03</span> Contacto</h2>
+    </div>
+    <div class="contact-grid">
+      <form id="contact-form" class="contact-form" novalidate>
+        <div class="field">
+          <label for="nombre" class="mono">Nombre / Empresa</label>
+          <input id="nombre" name="nombre" type="text" placeholder="Tu nombre o empresa" required minlength="3">
+          <span class="field-error mono" data-error-for="nombre"></span>
+        </div>
+        <div class="field">
+          <label for="email" class="mono">Correo</label>
+          <input id="email" name="email" type="email" placeholder="tu@correo.com" required>
+          <span class="field-error mono" data-error-for="email"></span>
+        </div>
+        <div class="field">
+          <label for="mensaje" class="mono">Mensaje / Número</label>
+          <textarea id="mensaje" name="mensaje" rows="4" placeholder="Cuéntame qué necesitas… (puedes incluir tu número)" required minlength="15"></textarea>
+          <span class="field-error mono" data-error-for="mensaje"></span>
+        </div>
+        <div class="form-actions">
+          <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+          <span class="mono form-status" id="form-status" role="status" aria-live="polite"></span>
+        </div>
+      </form>
+      <div class="contact-aside">
+        <p class="mono contact-note">Más sobre mí:</p>
+        <div class="social-row">
+          <a href="https://www.linkedin.com/in/leandro-de-la-cruz-b32373425/" target="_blank" rel="noreferrer" aria-label="LinkedIn"><img src="img/iconos/linkedin.svg" alt="LinkedIn"></a>
+          <a href="https://github.com/2511080107" target="_blank" rel="noreferrer" aria-label="GitHub"><img src="img/iconos/github.svg" alt="GitHub"></a>
+          <a href="https://www.instagram.com/leandr.zzz/" target="_blank" rel="noreferrer" aria-label="Instagram"><img src="img/iconos/instagram.svg" alt="Instagram"></a>
+        </div>
+        <ul class="mono contact-links">
+          <li><a href="https://github.com/2511080107" target="_blank" rel="noreferrer">github.com/2511080107</a></li>
+          <li><a href="https://www.linkedin.com/in/leandro-de-la-cruz-b32373425/" target="_blank" rel="noreferrer">linkedin.com/in/leandro-de-la-cruz</a></li>
+        </ul>
+        <details class="mono inbox">
+          <summary>Ver mensajes guardados (<span id="inbox-count">0</span>)</summary>
+          <ul id="inbox-list" class="inbox-list"></ul>
+          <button id="clear-inbox" class="btn btn-ghost btn-small" type="button">Borrar todo</button>
+        </details>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer mono wrap">
+  <span>© <span id="year"></span> De la Cruz Saavedra Leandro Kaled — Modo oscuro. HTML/CSS/JS vanilla.</span>
+  <a href="#" class="mono">Volver arriba ↑</a>
+</footer>
+
+<dialog id="project-dialog" class="dialog">
+  <form method="dialog" class="dialog-box">
+    <div class="dialog-head">
+      <h3 id="dialog-title" class="dialog-title"></h3>
+      <button type="submit" class="btn btn-ghost btn-small" aria-label="Cerrar">Cerrar ✕</button>
+    </div>
+    <img id="dialog-img" src="" alt="" style="width:100%; height:180px; object-fit:cover; border:1.5px solid var(--line); border-radius:8px; margin:10px 0; display:none">
+    <p id="dialog-desc" class="dialog-desc"></p>
+    <ul id="dialog-meta" class="mono dialog-meta"></ul>
+    <div class="dialog-actions">
+      <a id="dialog-link" href="#" target="_blank" rel="noreferrer" class="btn btn-primary btn-small">Abrir referencia →</a>
+      <button type="button" id="dialog-fav" class="btn btn-ghost btn-small">☆ Guardar favorito</button>
+    </div>
+  </form>
+</dialog>
+
+<div id="toast" class="toast mono" role="status" aria-live="polite"></div>
+<script src="script.js"></script>
+</body>
+</html>
