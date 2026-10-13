@@ -1,0 +1,185 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+    color: #2b3440;
+    background-color: #eef2f7;
+}
+
+/* ---------- Encabezado ---------- */
+header {
+    text-align: center;
+    padding: 46px 20px 8px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.9rem;
+    font-weight: 700;
+    letter-spacing: 6px;
+    color: #2b3440;
+}
+
+header h2 {
+    margin: 8px auto 0;
+    font-size: 0.95rem;
+    font-weight: 400;
+    color: #6b7785;
+}
+
+header h2::after {
+    content: "";
+    display: block;
+    width: 46px;
+    height: 3px;
+    margin: 12px auto 0;
+    border-radius: 3px;
+    background: #2f6f68;
+}
+
+/* ---------- Contenido ---------- */
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 34px 20px 60px;
+}
+
+form {
+    width: 100%;
+    max-width: 420px;
+    padding: 34px 32px;
+    background: #ffffff;
+    border-radius: 14px;
+    border-top: 4px solid #2f6f68;
+    box-shadow: 0 12px 32px rgba(43, 52, 64, 0.09);
+    display: flex;
+    flex-direction: column;
+}
+
+form br {
+    display: none;
+}
+
+form label {
+    margin-bottom: 6px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #45505d;
+}
+
+form input {
+    margin-bottom: 18px;
+    padding: 11px 13px;
+    font-size: 0.95rem;
+    font-family: inherit;
+    color: #2b3440;
+    background: #f8fafc;
+    border: 1px solid #d3dae3;
+    border-radius: 8px;
+    transition: border-color .2s, box-shadow .2s, background .2s;
+}
+
+form input:focus {
+    outline: none;
+    background: #ffffff;
+    border-color: #2f6f68;
+    box-shadow: 0 0 0 3px rgba(47, 111, 104, 0.15);
+}
+
+form button {
+    margin-top: 6px;
+    padding: 12px;
+    font-size: 0.95rem;
+    font-family: inherit;
+    font-weight: 600;
+    letter-spacing: .6px;
+    color: #ffffff;
+    background: #2f6f68;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background .2s, transform .1s;
+}
+
+form button:hover {
+    background: #275c56;
+}
+
+form button:active {
+    transform: translateY(1px);
+}
+
+/* ---------- Mensaje de estado ---------- */
+#mensaje {
+    width: 100%;
+    max-width: 420px;
+    margin: 18px 0 0;
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+#mensaje:empty {
+    display: none;
+}
+
+.mensaje-exito {
+    color: #2f6f68;
+}
+
+.mensaje-error {
+    color: #c0392b;
+}
+
+/* ---------- Pie de pagina ---------- */
+footer {
+    padding: 26px 20px;
+    text-align: center;
+    font-size: 0.85rem;
+    color: #6b7785;
+    background: #e3e9f0;
+}
+
+footer hr {
+    display: none;
+}
+
+footer h1 {
+    margin: 0 0 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #45505d;
+}
+
+footer > div:last-child {
+    margin-top: 10px;
+    font-size: 0.78rem;
+    color: #8592a3;
+}
+/* ---------- Bloque de introduccion ---------- */
+.intro {
+    width: 100%;
+    max-width: 420px;
+    margin-bottom: 20px;
+    padding: 18px 22px;
+    background: #ffffff;
+    border-left: 4px solid #2f6f68;
+    border-radius: 10px;
+    box-shadow: 0 6px 18px rgba(43, 52, 64, 0.06);
+}
+
+.intro p {
+    margin: 0;
+    font-size: 0.92rem;
+    line-height: 1.6;
+    color: #45505d;
+}

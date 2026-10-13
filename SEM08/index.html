@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@5/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+    emailjs.init('eaGOfWDsP-ES_tu3J')
+    </script>
+
+</head>
+<body>
+    <header>
+        <h1>VISITA MI REPOSITORIO</h1>
+        <h2>GITHUB</h2>
+    </header>
+
+    <main>
+
+        <div class="intro">
+            <p> Soy el alumno Leandro De la Cruz y te invito a ver mi repositorio. <br> 
+                Ingresa tus datos para poder enviarte el enlace del deploy del repo.</p>
+        </div>
+
+        <form id="registroForm">
+            
+            <label for="email">Ingrese su correo electronico: </label>
+            <input type="email" id="email" name="email" required>
+
+            <br>
+
+            <label for="nombre">Ingrese sus nombres y apellidos completos: </label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <br>
+
+            <button type="submit">Enviar</button>
+        </form>
+
+        <p id="mensaje"></p>
+
+    </main>
+
+    <footer>
+        <hr>
+
+        <h1>Mi repo</h1>
+
+        <div>
+            &copy; Universidad Nacional de Cañete. Todos los derechos reservados
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
