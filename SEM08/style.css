@@ -12,7 +12,6 @@ body {
     background-color: #eef2f7;
 }
 
-/* ---------- Encabezado ---------- */
 header {
     text-align: center;
     padding: 46px 20px 8px;
@@ -43,7 +42,6 @@ header h2::after {
     background: #2f6f68;
 }
 
-/* ---------- Contenido ---------- */
 main {
     flex: 1;
     display: flex;
@@ -117,7 +115,6 @@ form button:active {
     transform: translateY(1px);
 }
 
-/* ---------- Mensaje de estado ---------- */
 #mensaje {
     width: 100%;
     max-width: 420px;
@@ -139,7 +136,6 @@ form button:active {
     color: #c0392b;
 }
 
-/* ---------- Pie de pagina ---------- */
 footer {
     padding: 26px 20px;
     text-align: center;
@@ -165,7 +161,6 @@ footer > div:last-child {
     font-size: 0.78rem;
     color: #8592a3;
 }
-/* ---------- Bloque de introduccion ---------- */
 .intro {
     width: 100%;
     max-width: 420px;
