@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" width="900" height="620" role="img" aria-label="Edificio academico">
+  <defs>
+    <linearGradient id="c" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#123c5e"/><stop offset="100%" stop-color="#4d84a8"/></linearGradient>
+    <linearGradient id="s" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#efe9dd"/><stop offset="100%" stop-color="#c3baa7"/></linearGradient>
+  </defs>
+  <rect width="900" height="620" fill="url(#c)"/>
+  <rect y="470" width="900" height="150" fill="#2c4a33"/>
+  <rect x="120" y="230" width="660" height="250" fill="url(#s)"/>
+  <rect x="100" y="205" width="700" height="30" fill="#d9d0bd"/>
+  <g fill="#2f2a22"><rect x="300" y="270" width="70" height="210" rx="34"/><rect x="400" y="270" width="70" height="210" rx="34"/><rect x="500" y="270" width="70" height="210" rx="34"/><rect x="600" y="270" width="70" height="210" rx="34"/></g><rect x="640" y="140" width="120" height="70" fill="#d9d0bd"/><path d="M630 142 H770 L760 112 H640 Z" fill="#b3a893"/>
+  <rect x="0" y="466" width="900" height="10" fill="#00000022"/>
+  <g fill="#24425c">
+    <rect x="60" y="330" width="40" height="150" rx="18"/>
+    <rect x="800" y="330" width="40" height="150" rx="18"/>
+  </g>
+</svg>

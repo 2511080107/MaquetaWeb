@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" width="900" height="620" role="img" aria-label="Laboratorio de investigacion">
+  <defs><linearGradient id="l" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#e9eef3"/><stop offset="100%" stop-color="#b9c6d4"/></linearGradient></defs>
+  <rect width="900" height="620" fill="url(#l)"/>
+  <rect y="440" width="900" height="180" fill="#8fa2b5"/>
+  <g fill="#ffffff" opacity="0.65"><rect x="70" y="200" width="300" height="240" rx="8"/><rect x="530" y="200" width="300" height="240" rx="8"/></g>
+  <g stroke="#3c5a7a" stroke-width="8" fill="none">
+    <path d="M300 300 h60 v60 l60 110 h-180 l60 -110 z"/>
+    <path d="M540 300 h60 v60 l60 110 h-180 l60 -110 z"/>
+  </g>
+  <path d="M246 400 h228 l18 34 h-264 z" fill="#c8654a" opacity="0.85"/>
+  <path d="M486 400 h228 l18 34 h-264 z" fill="#4e8fb0" opacity="0.85"/>
+  <g fill="#2f4a72" opacity="0.9">
+    <circle cx="250" cy="120" r="22"/><circle cx="450" cy="120" r="22"/><circle cx="650" cy="120" r="22"/>
+  </g>
+  <g stroke="#2f4a72" stroke-width="4" fill="none" opacity="0.6">
+    <path d="M250 142 q100 60 200 0"/><path d="M450 142 q100 60 200 0"/><path d="M250 142 q100 80 400 0"/>
+  </g>
+</svg>

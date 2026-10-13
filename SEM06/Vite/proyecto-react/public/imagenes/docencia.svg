@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" width="900" height="620" role="img" aria-label="Aula de docencia">
+  <defs><linearGradient id="d" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#1b2b3a"/><stop offset="100%" stop-color="#38566f"/></linearGradient></defs>
+  <rect width="900" height="620" fill="url(#d)"/>
+  <rect x="90" y="70" width="720" height="270" rx="10" fill="#f2ede1"/>
+  <g stroke="#4a6274" stroke-width="7" stroke-linecap="round" opacity="0.65">
+    <path d="M150 130 h420"/><path d="M150 190 h520"/><path d="M150 250 h330"/>
+  </g>
+  <g fill="#2f4a72"><path d="M250 430 l120 -70 v90 z"/><path d="M370 360 h150 v12 h-150 z"/></g>
+  <g fill="#1c2b38" opacity="0.85">
+    <circle cx="230" cy="470" r="34"/><rect x="196" y="504" width="68" height="70" rx="24"/>
+    <circle cx="380" cy="470" r="34"/><rect x="346" y="504" width="68" height="70" rx="24"/>
+    <circle cx="530" cy="470" r="34"/><rect x="496" y="504" width="68" height="70" rx="24"/>
+    <circle cx="680" cy="470" r="34"/><rect x="646" y="504" width="68" height="70" rx="24"/>
+  </g>
+</svg>
